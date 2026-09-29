@@ -13,7 +13,7 @@ export default function Hero() {
       </div>
 
       <div className="container-x">
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(340px,460px)] lg:gap-16">
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(290px,395px)] lg:gap-16">
           <div>
         <Reveal>
           <div className="inline-flex items-center gap-2 rounded-full border border-fg/10 bg-fg/[0.03] py-1.5 pl-1.5 pr-4">
@@ -61,7 +61,7 @@ export default function Hero() {
           </div>
 
           <Reveal delay={300}>
-            <div className="relative mx-auto w-full max-w-[300px] animate-float lg:max-w-none">
+            <div className="relative mx-auto w-full max-w-[260px] animate-float lg:max-w-none">
               <div
                 aria-hidden
                 className="pointer-events-none absolute inset-[-12%] -z-10 animate-glow rounded-[28%] bg-[radial-gradient(circle,rgb(var(--glow-brand)_/_var(--glow-a)),transparent_68%)] blur-[30px]"
