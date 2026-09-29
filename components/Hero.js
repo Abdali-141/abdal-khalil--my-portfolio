@@ -1,3 +1,4 @@
+import PortfolioPreview from './PortfolioPreview';
 import Reveal from './Reveal';
 import { heroStats, markets, profile } from './content';
 
@@ -12,6 +13,8 @@ export default function Hero() {
       </div>
 
       <div className="container-x">
+        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(340px,460px)] lg:gap-16">
+          <div>
         <Reveal>
           <div className="inline-flex items-center gap-2 rounded-full border border-fg/10 bg-fg/[0.03] py-1.5 pl-1.5 pr-4">
             <span className="shrink-0 rounded-full bg-fg/10 px-2.5 py-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-fg/70">
@@ -40,17 +43,46 @@ export default function Hero() {
 
         <Reveal delay={240}>
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <a href="#contact" className="btn-primary">
-              Start a conversation
+            <PortfolioPreview variant="primary" label="View portfolio" />
+            <a href={profile.cvPdf} download className="btn-ghost">
+              Download CV
               <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden>
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path
+                  d="M8 2v8m0 0L5 7m3 3 3-3M2.5 11.5v1A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5v-1"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
-            </a>
-            <a href="#work" className="btn-ghost">
-              See the numbers
             </a>
           </div>
         </Reveal>
+          </div>
+
+          <Reveal delay={300}>
+            <div className="relative mx-auto w-full max-w-[300px] animate-float lg:max-w-none">
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-[-12%] -z-10 animate-glow rounded-[28%] bg-[radial-gradient(circle,rgb(var(--glow-brand)_/_var(--glow-a)),transparent_68%)] blur-[30px]"
+              />
+              <div className="portrait-fade-y">
+                <picture>
+                  <source srcSet="/abdal-khalil.webp" type="image/webp" />
+                  <img
+                    src="/abdal-khalil.jpg"
+                    alt={`${profile.name}, paid media specialist`}
+                    width={1000}
+                    height={1000}
+                    loading="eager"
+                    decoding="async"
+                    className="portrait-fade-x block aspect-[4/5] w-full select-none object-cover object-[52%_30%]"
+                  />
+                </picture>
+              </div>
+            </div>
+          </Reveal>
+        </div>
 
         <Reveal delay={320}>
           <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-fg/[0.07] bg-fg/[0.06] lg:grid-cols-4">

@@ -1,8 +1,8 @@
+import PortfolioPreview from './PortfolioPreview';
 import { profile } from './content';
 
 const socials = [
   { label: 'LinkedIn', href: profile.linkedin },
-  { label: 'Behance portfolio', href: profile.behance },
   { label: 'Email', href: `mailto:${profile.email}` },
 ];
 
@@ -15,23 +15,26 @@ export default function Footer() {
             <div className="font-script text-[26px] font-bold leading-tight text-fg">
               {profile.name}
             </div>
-            <div className="mt-1 font-mono text-[11px] tracking-[0.06em] text-fg/45">
-              {profile.role}
-            </div>
           </div>
 
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            {socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target={s.href.startsWith('http') ? '_blank' : undefined}
-                rel={s.href.startsWith('http') ? 'noreferrer noopener' : undefined}
-                className="text-[13.5px] text-fg/45 transition-colors duration-300 hover:text-fg"
-              >
-                {s.label}
-              </a>
-            ))}
+            <a
+              href={socials[0].href}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-[13.5px] text-fg/45 transition-colors duration-300 hover:text-fg"
+            >
+              {socials[0].label}
+            </a>
+
+            <PortfolioPreview />
+
+            <a
+              href={socials[1].href}
+              className="text-[13.5px] text-fg/45 transition-colors duration-300 hover:text-fg"
+            >
+              {socials[1].label}
+            </a>
           </nav>
         </div>
 

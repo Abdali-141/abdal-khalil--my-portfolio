@@ -25,11 +25,13 @@ module.exports = {
         marquee: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } },
         rise: { '0%': { opacity: 0, transform: 'translateY(14px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
         glow: { '0%,100%': { opacity: 0.35 }, '50%': { opacity: 0.6 } },
+        float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-14px)' } },
       },
       animation: {
         marquee: 'marquee 38s linear infinite',
         rise: 'rise 0.7s cubic-bezier(0.22,1,0.36,1) both',
         glow: 'glow 7s ease-in-out infinite',
+        float: 'float 8s ease-in-out infinite',
       },
     },
   },

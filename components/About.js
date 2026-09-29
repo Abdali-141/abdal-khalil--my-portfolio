@@ -5,7 +5,7 @@ import { timeline, profile } from './content';
 export default function About() {
   return (
     <section id="about" className="relative border-t border-fg/[0.06] py-24 sm:py-32">
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute right-[-8%] top-[15%] h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgb(52_211_153_/_var(--glow-b)),transparent_65%)] blur-2xl" />
       </div>
 
@@ -15,7 +15,7 @@ export default function About() {
             <SectionHead
               eyebrow="Who you're working with"
               title="Five years, one discipline."
-              blurb="Paid media only — no split attention across ten services. Google Ads since 2021, with Local Services Ads and Meta Ads alongside, across a portfolio of 200+ live accounts and 100+ client projects."
+              blurb="Paid media only — no split attention across ten services. Google Ads since 2021, with Local Services Ads and Meta Ads alongside, across a portfolio of 60+ live accounts and 100+ client projects."
             />
 
             <Reveal delay={120}>
@@ -24,7 +24,7 @@ export default function About() {
                   { k: 'Based in', v: profile.location },
                   { k: 'Availability', v: profile.availability },
                   { k: 'Education', v: 'BSc Computer Science — NCBA&E' },
-                  { k: 'Certifications', v: 'HubSpot Academy · Google Ads (in progress)' },
+                  { k: 'Certifications', v: 'HubSpot Academy · Google Ads Search Certification' },
                 ].map((row) => (
                   <div key={row.k} className="bg-bg px-5 py-5">
                     <div className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-fg/45">

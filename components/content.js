@@ -8,11 +8,14 @@ export const profile = {
   availability: 'Remote or onsite',
   linkedin: 'https://linkedin.com/in/abdalidm',
   behance: 'https://behance.net/gallery/198863273/Google-Ads-Portfolio',
+  portfolioPdf: '/abdal-khalil-portfolio.pdf',
+  cvPdf: '/abdal-khalil-cv.pdf',
+  portfolioPages: 53,
 };
 
 export const heroStats = [
   { value: '$600K+', label: 'Ad spend managed' },
-  { value: '200+', label: 'Live accounts' },
+  { value: '60+', label: 'Live accounts' },
   { value: '16,989', label: 'Leads & conversions tracked' },
   { value: '5 yrs', label: 'Paid media only' },
 ];
@@ -132,28 +135,28 @@ export const caseStudies = [
 export const process = [
   {
     n: '01',
-    title: 'Audit before spend',
-    body: 'Account structure, search terms, bidding and tracking reviewed together. Nothing scales until reported conversions match what the business can see in its own systems.',
+    title: 'Understand the Business',
+    body: 'Before changing campaigns, I understand the offer, customer journey, market, margins and what actually counts as a qualified conversion.',
   },
   {
     n: '02',
-    title: 'Rebuild the structure',
-    body: 'Ad groups split by service line, negatives built out, Responsive Search Ads rewritten around converting intent, bidding matched to the account stage.',
+    title: 'Audit the Data',
+    body: 'I review campaign structure, search terms, audiences, bidding, budgets and conversion tracking to identify where performance is being lost.',
   },
   {
     n: '03',
-    title: 'Fix measurement',
-    body: 'GA4, GTM, Pixel and Conversions API wired for call, form and purchase events, with platform-to-backend discrepancies resolved first.',
+    title: 'Build Around Intent',
+    body: 'Campaigns, ad groups, keywords, audiences and messaging are structured around customer intent rather than platform convenience.',
   },
   {
     n: '04',
-    title: 'Scale on evidence',
-    body: 'Budget pacing, geo and dayparting adjustments, creative and landing page tests — each change made against a reported number, not a hunch.',
+    title: 'Test and Optimize',
+    body: 'Search terms, creatives, bids, budgets, locations, devices, audiences and landing-page performance are continuously reviewed against conversion data.',
   },
   {
     n: '05',
-    title: 'Report and decide',
-    body: 'Looker Studio dashboards and a monthly review tying spend to leads and cost per lead. That review is where the next budget gets agreed.',
+    title: 'Scale What Works',
+    body: 'Budget increases are based on performance evidence — qualified leads, CPA, ROAS and business outcomes — rather than traffic or impression growth alone.',
   },
 ];
 
@@ -165,11 +168,11 @@ export const stack = [
 ];
 
 export const timeline = [
-  { role: 'Senior Digital Marketer', org: 'XpertDigi', period: 'Nov 2025 — Present', note: '200+ live accounts and 100+ client projects across US, UK and Gulf markets.' },
-  { role: 'Google Ads & Paid Media Consultant', org: 'Self-employed', period: 'Feb 2021 — Present', note: 'Direct US and international clients, plus contracts with Quantaprix AI, BugsTechy, Autobahn Auto Service (Dubai) and Zealite Solutions.' },
+  { role: 'Senior Digital Marketer', org: 'XpertDigi', period: 'Nov 2025 — Present', note: '60+ live accounts and 100+ client projects across US, UK and Gulf markets.' },
   { role: 'Digital Marketing Executive', org: 'XpertDigi', period: 'Oct 2024 — Nov 2025', note: 'Google Ads and Local Services Ads builds, keyword research and ad copy testing for client accounts.' },
   { role: 'Digital Marketing Manager', org: '3rdEyeSoft', period: 'Nov 2023 — Oct 2024', note: '$25,000 monthly budget across Google Ads, Meta, TikTok, X and Apple Search Ads.' },
   { role: 'Google Ads Specialist', org: 'Top Notch Digital', period: 'Nov 2022 — Oct 2023', note: 'Google Ads accounts for Canadian agency clients — keyword research, bidding and search term analysis.' },
+  { role: 'Google Ads & Paid Media Consultant', org: 'Self-employed', period: 'Feb 2021 — Present', note: 'Direct US and international clients, plus contracts with Quantaprix AI, BugsTechy, Autobahn Auto Service (Dubai) and Zealite Solutions.' },
 ];
 
 export const faqs = [

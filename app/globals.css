@@ -110,6 +110,56 @@ body {
   color: transparent;
 }
 
+.portrait-fade-x,
+.portrait-fade-y {
+  /* one axis each, on nested elements: the two masks multiply naturally, so
+     this needs no mask-composite support to feather all four sides */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.portrait-fade-x {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 7%,
+    #000 22%,
+    #000 78%,
+    rgba(0, 0, 0, 0.35) 93%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 7%,
+    #000 22%,
+    #000 78%,
+    rgba(0, 0, 0, 0.35) 93%,
+    transparent 100%
+  );
+}
+
+.portrait-fade-y {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 6%,
+    #000 19%,
+    #000 81%,
+    rgba(0, 0, 0, 0.35) 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.35) 6%,
+    #000 19%,
+    #000 81%,
+    rgba(0, 0, 0, 0.35) 94%,
+    transparent 100%
+  );
+}
+
 .mask-fade-x {
   -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
   mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
@@ -133,6 +183,8 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
-  .animate-marquee { animation: none; }
+  .animate-marquee,
+  .animate-float,
+  .animate-glow { animation: none; }
   html { scroll-behavior: auto; }
 }

@@ -11,7 +11,7 @@ export default function Process() {
             <SectionHead
               eyebrow="How it runs"
               title="Measurement first. Budget second."
-              blurb="A repeatable order of operations — the same one used across 200+ live accounts."
+              blurb="A repeatable order of operations — the same one used across 60+ live accounts."
             />
           </div>
 
